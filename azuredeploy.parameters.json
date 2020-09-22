@@ -1,69 +1,66 @@
 {
-	"$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
-	"contentVersion": "1.0.0.0",
-	"parameters": {
-		"_artifactsLocation": {
-			"value": "https://raw.githubusercontent.com/Microsoft/openshift-origin/azurestack-release-3.7/"
-		},
-		"masterVmSize": {
-			"value": "Standard_DS2_v2"
-		},
-		"infraVmSize": {
-			"value": "Standard_DS2_v2"
-		},
-		"nodeVmSize": {
-			"value": "Standard_DS2_v2"
-		},
-		"storageKind": {
-			"value": "unmanaged"
-		},
-		"openshiftClusterPrefix": {
-			"value": "changeme"
-		},
-		"masterInstanceCount": {
-			"value": 3
-		},
-		"infraInstanceCount": {
-			"value": 3
-		},
-		"nodeInstanceCount": {
-			"value": 1
-		},
-		"dataDiskSize": {
-			"value": 128
-		},
-		"adminUsername": {
-			"value": "changeme"
-		},
-		"openshiftPassword": {
-			"value": "changeme"
-		},
-		"enableMetrics": {
-			"value": "false"
-		},
-		"enableLogging": {
-			"value": "false"
-		},
-		"sshPublicKey": {
-			"value": "changeme"
-		},
-		"keyVaultResourceGroup": {
-			"value": "changeme"
-		},
-		"keyVaultName": {
-			"value": "changeme"
-		},
-		"keyVaultSecret": {
-			"value": "changeme"
-		},
-		"enableAzure": {
-			"value": "false"
-		},
-		"defaultSubDomainType": {
-			"value": "nipio"
-		},
-		"defaultSubDomain": {
-			"value": "changeme"
-		}
-	}
+    "$schema":  "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion":  "1.0.0.0",
+    "parameters":  {
+                       "_artifactsLocation":  {
+                                                  "value":  "https://raw.githubusercontent.com/Keerthanag11/openshift-origin/azurestack-release-3.9"
+                                              },
+                       "masterVmSize":  {
+                                            "value":  "Standard_DS2_v2"
+                                        },
+                       "infraVmSize":  {
+                                           "value":  "Standard_DS2_v2"
+                                       },
+                       "nodeVmSize":  {
+                                          "value":  "Standard_DS2_v2"
+                                      },
+                       "storageKind":  {
+                                           "value":  "unmanaged"
+                                       },
+                       "openshiftClusterPrefix":  {
+                                                      "value":  "Trial"
+                                                  },
+                       "masterInstanceCount":  {
+                                                   "value":  3
+                                               },
+                       "infraInstanceCount":  {
+                                                  "value":  2
+                                              },
+                       "nodeInstanceCount":  {
+                                                 "value":  1
+                                             },
+                       "dataDiskSize":  {
+                                            "value":  128
+                                        },
+                       "adminUsername":  {
+                                             "value":  "azureuser"
+                                         },
+                       "openshiftPassword":  {
+                                                 "value":  "Keerthu1@3$"
+                                             },
+                       "enableMetrics":  {
+                                             "value":  "false"
+                                         },
+                       "enableLogging":  {
+                                             "value":  "false"
+                                         },
+                       "sshPublicKey":  {
+                                            "value":  "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDoKvyigqSFFyJ0N8a8FwfewRzWQP89Psdc5XXAsyYfGd59acocA+NgELB9WZuS7F1AqMaGuR2a2Twv45iECy67x7JRMD1OptAyufKi4fZFb5RIfWxBlkiulcv7VuVw0BRJxQp6KfJKV1gzzUCmdRCl6yaNm5Kir+Nc/FqBnn6B+lg6FB76tZh8oL3DgcIKkSl4F3+zVdLMTx72+5w9NVcdJvYLI8l0uEQPGaNJhdxHv5qrPJazfOMA3s5xZ+NLMOTNqCaojTCA7q9nLuKQRJdUhCs72+pRp9wDGU+vPR4MPrdRc+yWL8dkj/PVnXgY6vG4NAkRgSuZ7727i17vXlIv test key\r\n"
+                                        },
+                       "keyVaultResourceGroup":  {
+                                                     "value":  "trialwithCNSenabled"
+                                                 },
+                       "keyVaultName":  {
+                                            "value":  "trialKeyVaultCNSenabled"
+                                        },
+                       "keyVaultSecret":  {
+                                              "value":  "trialKeyVaultSecretforCNSenabled"
+                                          },
+                       "defaultSubDomainType":  {
+                                                    "value":  "nipio"
+                                                },
+                       "defaultSubDomain":  {
+                                                "value":  "changeme"
+                                            }
+                   }
 }
